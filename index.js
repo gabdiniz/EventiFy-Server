@@ -45,6 +45,6 @@ app.use(errors());
 authenticate(connection);
 connection.sync();
 
-app.listen(3001, () => {
-  console.log("Servidor rodando em http://localhost:3001/");
+app.listen(process.env.DB_PORT, () => {
+  console.log(`Servidor rodando em http://localhost:${process.env.DB_PORT}/`);
 });
