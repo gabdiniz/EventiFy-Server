@@ -1,4 +1,4 @@
-
+import mysql2 from 'mysql2';
 
 const { Sequelize } = require("sequelize");
 
@@ -6,7 +6,8 @@ const connection = new Sequelize(process.env.DB_NAME, process.env.DB_USER, proce
         host: process.env.DB_HOST,
         dialect: "mysql",
         timezone: "-03:00",
-        port: process.env.DB_PORT
+        port: process.env.DB_PORT,
+        dialectModule: mysql2,
     }
 );
 
