@@ -48,3 +48,9 @@ connection.sync();
 app.listen(process.env.DB_PORT, () => {
   console.log(`Servidor rodando em http://localhost:${process.env.DB_PORT}/`);
 });
+
+module.exports = async (req, res) => {
+  // Ao lidar com solicitações HTTP, você precisa garantir que o aplicativo Express seja chamado corretamente
+  // para que ele possa manipular solicitações e respostas
+  await app(req, res);
+};
