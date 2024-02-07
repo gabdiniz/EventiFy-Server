@@ -22,7 +22,7 @@ const routeSuperAdmin = require("./routes/superadmin");
 
 const app = express();
 app.use(express.json());
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors({ origin: "*" }));
 
 // Definir as rotas
 app.use('/auth', authRoutes);
