@@ -2,7 +2,7 @@ const nodemailer = require('nodemailer');
 
 // Configurações de autenticação do Gmail
 const emailConfig = {
-    service: 'hotmail',
+    service: 'gmail',
     auth: {
       user: process.env.MAIL_USERNAME,
       pass: process.env.MAIL_PASSWORD,

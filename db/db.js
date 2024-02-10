@@ -1,4 +1,4 @@
-import mysql2 from 'mysql2';
+const mysql2  = require('mysql2');
 
 const { Sequelize } = require("sequelize");
 
